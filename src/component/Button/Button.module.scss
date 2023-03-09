@@ -1,14 +1,16 @@
 .wrapper {
     display: inline-flex;
     align-items: center;
-    text-align: center;
+    font-size: 1.6rem;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'ProximaNova', sans-serif;
     min-width: 100px;
     padding: 9px 16px;
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--while);
+    // background-color: transparent;
     border: 1px solid transparent;
     user-select: none;
 

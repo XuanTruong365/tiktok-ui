@@ -20,7 +20,7 @@ import styles from './Header.module.scss';
 import images from '~/acsets/images';
 import Menu from '~/component/Popper/Menu';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { UploadIcon } from '~/component/Icons';
+import { MailBoxIcon, UploadIcon } from '~/component/Icons';
 import Image from '~/component/Image';
 import Search from '../Search';
 
@@ -128,7 +128,17 @@ function Header() {
                                         className={cx('action-btn')}
                                         icon={faCloudUpload}
                                     ></FontAwesomeIcon>
+                                </button>
+                            </Tippy>
+                            <Tippy content="Message" placement="bottom">
+                                <button className={cx('icon-header')}>
                                     <UploadIcon />
+                                </button>
+                            </Tippy>
+                            <Tippy content="Notify" placement="bottom">
+                                <button className={cx('icon-header')}>
+                                    <MailBoxIcon />
+                                    <div className={cx('notify-number')}>99</div>
                                 </button>
                             </Tippy>
                         </>

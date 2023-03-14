@@ -1,11 +1,11 @@
 import * as httpRequest from '~/untils/request';
 
-export const suggest = async (page = '1', per_page) => {
+export const loadVideo = async (type, page = '1') => {
     try {
-        const response = await httpRequest.get('users/suggested', {
+        const response = await httpRequest.get('videos', {
             params: {
+                type,
                 page,
-                per_page,
             },
         });
 

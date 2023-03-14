@@ -29,7 +29,7 @@ function AccountPreview() {
                 <p className={cx('analytics')}>
                     <strong className={cx('value')}>8.2M </strong>
                     <span className={cx('label')}>Followers</span>
-                    <strong className={cx('value')}>8k </strong>
+                    <strong className={cx('value')}> 8k </strong>
                     <span className={cx('label')}>Likes</span>
                 </p>
             </div>

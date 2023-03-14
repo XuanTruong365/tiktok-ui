@@ -17,29 +17,36 @@ const cx = classNames.bind(styles);
 
 function Sidebar() {
     return (
-        <aside className={cx('wrapper')}>
-            <Menu>
-                <MenuItem
-                    title="For Your"
-                    to={config.routes.home}
-                    icon={<HomeIcon />}
-                    activeIcon={<HomeActiveIcon />}
-                />
-                <MenuItem
-                    title="Following"
-                    to={config.routes.following}
-                    icon={<UserGroupIcon />}
-                    activeIcon={<UserActiveGroupIcon />}
-                />
-                <MenuItem title="LIVE" to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
+        <aside className={cx('wrapper-1')}>
+            <div className={cx('inner-fixed')}>
+                <Menu>
+                    <MenuItem
+                        title="For Your"
+                        to={config.routes.home}
+                        icon={<HomeIcon />}
+                        activeIcon={<HomeActiveIcon />}
+                    />
+                    <MenuItem
+                        title="Following"
+                        to={config.routes.following}
+                        icon={<UserGroupIcon />}
+                        activeIcon={<UserActiveGroupIcon />}
+                    />
+                    <MenuItem
+                        title="LIVE"
+                        to={config.routes.live}
+                        icon={<LiveIcon />}
+                        activeIcon={<LiveActiveIcon />}
+                    />
 
-                <SuggestedAcount label="Suggest account" />
+                    <SuggestedAcount label="Suggest account" />
 
-                {/* {suggests.map((suggest) => {
+                    {/* {suggests.map((suggest) => {
                     return <SuggestedAcount label="Suggest account" />;
                 })} */}
-                <SuggestedAcount label="Folowing account" />
-            </Menu>
+                    {/* <SuggestedAcount label="Folowing account" /> */}
+                </Menu>
+            </div>
         </aside>
     );
 }

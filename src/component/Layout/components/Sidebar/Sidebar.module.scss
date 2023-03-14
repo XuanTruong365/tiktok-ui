@@ -1,4 +1,32 @@
-.wrapper {
+.wrapper-1 {
     width: 356px;
-    padding: 20px 0 26px 8px;
+    padding: 20px 16px 26px 8px;
+}
+
+.inner-fixed {
+    position: fixed;
+    z-index: 9999;
+    top: 61px;
+    bottom: 0;
+    width: 356px;
+    overflow: hidden;
+
+    &:hover {
+        overflow: auto;
+        overflow-y: overlay;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(22, 24, 35, 0.06);
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+    }
 }
